@@ -20,6 +20,10 @@ class mainScene {
       this.hit();
     }
 
+if (game.input.mousePointer.isDown) {
+        this.player = game.physics.arcade.moveToXY(player, game.input.x, game.input.y, 600, 600);
+}
+
     if (this.arrow.right.isDown) {
       this.player.x += 3;
     } else if (this.arrow.left.isDown) {
